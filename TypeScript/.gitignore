@@ -2,3 +2,4 @@ dist
 node_modules
 package-lock.json
 node_modules/
+Add-Content .gitignore "TypeScript/node_modules/public-encrypt/test/test_rsa_privkey.pem"

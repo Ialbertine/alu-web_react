@@ -1,6 +1,6 @@
-declare namespace Subjects {
-    export interface TeacherInterface {
-        firstName: string;
-        lastName: string;
-    }
+namespace Subjects {
+  export interface Teacher {
+    firstName: string;
+    lastName: string;
+  }
 }

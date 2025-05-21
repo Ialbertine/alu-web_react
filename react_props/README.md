@@ -1,13 +1,4 @@
-# 0x03 React Props
-
-## Learning Objectives
-- How to create basic React components using functions
-- How to reuse components
-- How to pass properties to components
-- How to define types for components
-- How to use Fragments
-- When to use a key to improve a loop's performance
-
+# React Props
 ## How to create basic React components using functions
 This is actually really easy, you just need to create functions that return html+css, known as .jsx or with TypeScript, .tsx
 
@@ -58,12 +49,3 @@ App.defaultProps = {
   isLoggedIn: false,
 };
 ```
-
-## When to use a key to improve a loop's performance
-[From the docs!](https://reactjs.org/docs/lists-and-keys.html)
-Keys help React identify which items have changed, are added, or are removed. Keys should be given to the elements inside the array to give the elements a stable identity. This has to do with [the ways React identifies list mutations](https://reactjs.org/docs/reconciliation.html#recursing-on-children) I think this line from the docs sums up the original question succinctly,
-> In practice, finding a key is usually not hard. The element you are going to display may already have a unique ID, so the key can just come from your data:
-
-`<li key={item.id}>{item.name}</li>`
-
-This project was all about adding React props to components. Props give components the ability to do things based on upstream conditions and variables moving downstream. From parent to child components, props always move "downwards" or "downstream", because this is actually really hard to go upstream with. To solve that problem, we would implement a larger, more robust system like Redux, which uses actions and reducers to pass logic upstream and log all the changes.
